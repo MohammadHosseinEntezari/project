@@ -10,6 +10,7 @@ public class MusicMenu {
             int counter = 1;
             for (File f : folder.listFiles()) {
                 System.out.println(counter + "-" + f.getName());
+
                 counter++;
             }
             int num = scanner.nextInt();
@@ -19,7 +20,8 @@ public class MusicMenu {
                 System.out.println("invalid number!");
                 continue;
             }
-
+            MusicPlayer musicPlayer=new MusicPlayer(folder,num-1);
+            musicPlayer.playMusic();
         }
     }
 }
