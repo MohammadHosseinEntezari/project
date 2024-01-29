@@ -13,6 +13,7 @@ public class Login {
             String password = scanner.nextLine();
             if (User.checkLogin(username, password)) {
                 System.out.println("Welcome!");
+                ProfileMenu.showMenu();
             }
             else System.out.println("Username or password is not correct!");
         }

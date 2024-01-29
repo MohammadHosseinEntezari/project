@@ -10,6 +10,8 @@ public class ProfileMenu {
                 case 1:
                     break;
                 case 2:
+
+                    MusicMenu.showMenu();
                     break;
                 case 3:
                     return;
