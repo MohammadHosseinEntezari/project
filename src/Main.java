@@ -14,6 +14,7 @@ public class Main {
                     SignUp.showMenu();
                     break;
                 case 2:
+                    Login.loginMenu();
                     break;
                 case 3:
                     return;
