@@ -19,6 +19,8 @@ public class SignUp {
             User user = new User(username ,password);
             PrintStream printStream=new PrintStream(new FileOutputStream("UPM.txt",true));
             printStream.append(username + " " + password + "\n");
+            PrintStream txtCreator = new PrintStream(new FileOutputStream("usersPlayLists/"+username+".txt"));
+            txtCreator.close();
             printStream.close();
             System.out.println("Your sign up was successful");
             break;

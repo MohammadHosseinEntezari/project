@@ -1,11 +1,20 @@
+
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
+
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, JavaLayerException {
         Scanner scanner = new Scanner(System.in);
-
+//        File file=new File("musics");
+//
+//        for (File f:file.listFiles()){
+//            System.out.println(f.getName());
+//        }
         while(true){
             System.out.println("Choose an option from the menu \n1-Sign up\n2-Log in\n3-Exit");
             int choice = scanner.nextInt();
