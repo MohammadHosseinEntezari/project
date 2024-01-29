@@ -1,10 +1,7 @@
-public class Listener {
-    private String name;
+import java.io.IOException;
 
-    public Listener(String name) {
-        this.name = name;
-    }
-    public String getName(){
-        return name;
+public class Listener extends User{
+    public Listener(String username, String password) throws IOException {
+        super(username, password);
     }
 }
