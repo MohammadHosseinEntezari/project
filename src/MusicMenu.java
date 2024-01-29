@@ -14,8 +14,7 @@ public class MusicMenu {
                 counter++;
             }
             int num = scanner.nextInt();
-            scanner.nextLine();
-            if (num== 0) break;
+            if (num== 0) return;
             if (num>=counter){
                 System.out.println("invalid number!");
                 continue;

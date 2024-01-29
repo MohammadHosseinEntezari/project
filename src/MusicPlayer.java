@@ -25,6 +25,11 @@ public class MusicPlayer {
             shuffledMusics.add(f);
         }
     }
+    MusicPlayer(ArrayList<File> files,int current){
+        normalMusics=files;
+        shuffledMusics=files;
+        currentIndex=current;
+    }
 
     public void playMusic() {
         Scanner scanner = new Scanner(System.in);

@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class User {
@@ -7,6 +8,7 @@ public class User {
 
     private String username;
     private String password;
+    private HashMap<String ,ArrayList <Integer>> playLists;
 
     public User(String username, String password) throws IOException {
         users.add(this);
