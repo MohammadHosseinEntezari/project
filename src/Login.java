@@ -11,9 +11,10 @@ public class Login {
             if (username.equals("0")) break;
             System.out.println("Please enter your password");
             String password = scanner.nextLine();
-            if (User.checkLogin(username, password)) {
+            User user = User.checkLogin(username, password);
+            if (user!=null) {
                 System.out.println("Welcome!");
-                ProfileMenu.showMenu();
+                ProfileMenu.showMenu(user);
             }
             else System.out.println("Username or password is not correct!");
         }
